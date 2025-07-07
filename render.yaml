@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: price-listing-app
+    env: java
+    plan: free
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/*.jar
+    rootDir: backend
+    envVars:
+      - key: JAVA_VERSION
+        value: 17
