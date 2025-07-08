@@ -6,11 +6,11 @@ import ProductCarousel from "../components/ProductCarousel";
 const ProductListPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
-  const colorOrder = [
-    'Yellow Gold',
-    'White Gold',
-    'Rose Gold'
-  ];
+  // const colorOrder = [
+  //   'Yellow Gold',
+  //   'White Gold',
+  //   'Rose Gold'
+  // ];
 
   useEffect(() => {
     fetchProducts().then(setProducts);

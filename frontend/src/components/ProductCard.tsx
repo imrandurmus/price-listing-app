@@ -34,21 +34,21 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     'White Gold',
     'Rose Gold'
   ];
-  const sortedColorNames = [...colorOrder].sort((a, b) => {
-    const aIdx = colorOrder.indexOf(a);
-    const bIdx = colorOrder.indexOf(b);
-    if (aIdx === -1 && bIdx === -1) return a.localeCompare(b);
-    if (aIdx === -1) return 1;
-    if (bIdx === -1) return -1;
-    return aIdx - bIdx;
-  });
+  // const sortedColorNames = [...colorOrder].sort((a, b) => {
+  //   const aIdx = colorOrder.indexOf(a);
+  //   const bIdx = colorOrder.indexOf(b);
+  //   if (aIdx === -1 && bIdx === -1) return a.localeCompare(b);
+  //   if (aIdx === -1) return 1;
+  //   if (bIdx === -1) return -1;
+  //   return aIdx - bIdx;
+  // };
 
   // Map color names to Tailwind classes
-  const colorToClass: Record<string, string> = {
-    'Yellow Gold': 'bg-yellow-200',
-    'White Gold': 'bg-gray-200',
-    'Rose Gold': 'bg-pink-200',
-  };
+  // const colorToClass: Record<string, string> = {
+  //   'Yellow Gold': 'bg-yellow-200',
+  //   'White Gold': 'bg-gray-200',
+  //   'Rose Gold': 'bg-pink-200',
+  // };
 
   return (
     <div className="w-64 max-w-xs bg-white rounded-xl shadow-md p-4 m-2 flex-shrink-0">
