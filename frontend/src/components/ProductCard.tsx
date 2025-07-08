@@ -29,11 +29,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const selectedImage = product.images[selectedColor];
 
   
-  const colorOrder = [
-    'Yellow Gold',
-    'White Gold',
-    'Rose Gold'
-  ];
+  // const colorOrder = [
+  //   'Yellow Gold',
+  //   'White Gold',
+  //   'Rose Gold'
+  // ];
   // const sortedColorNames = [...colorOrder].sort((a, b) => {
   //   const aIdx = colorOrder.indexOf(a);
   //   const bIdx = colorOrder.indexOf(b);
